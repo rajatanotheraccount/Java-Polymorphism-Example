@@ -11,14 +11,27 @@ public class Greeter {
 		//Like scanning ,creating pidxml and other stuff
 		//This Interface implementation will be different for Mantra and different for Morpho Scanner
 		//Thus we are passig behaviour here everytime which keeps on changing everytime based on the device morpho and mantra
-		g.greet(hg);
+		
+		
+		g.greet(hg);   //This will greet from Class that we created HelloWorldGreeting
 		
 		
 		//Now we will create a Lambda Expression here
-		lambda_example_type function_name = ()->{
+		Greeting function_name = ()->{
 			//do something here 
-			System.out.println("I am inside Lambda Expression in Java");
+			System.out.println("Hello World from  inside Lambda Expression in Java");
 		};
+		
+		function_name.perform();//Executing a Lambda Express
+		
+		//The Same Concept is implied in Inner Class which 
+		Greeting inner_greeting=new Greeting(){
+			public void perform(){
+				System.out.println("Hello World from Inner Class");
+			}
+		};
+		
+		inner_greeting.perform();//Execute the Inner Class function..Notice that it is Interface that contains Implementation
 		
 	
 		
@@ -30,6 +43,4 @@ public class Greeter {
 	}
 	
 }
- interface lambda_example_type{
-	public void add();
-}
+
