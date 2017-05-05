@@ -12,6 +12,14 @@ public class Greeter {
 		//This Interface implementation will be different for Mantra and different for Morpho Scanner
 		//Thus we are passig behaviour here everytime which keeps on changing everytime based on the device morpho and mantra
 		g.greet(hg);
+		
+		
+		//Now we will create a Lambda Expression here
+		lambda_example_type function_name = ()->{
+			//do something here 
+			System.out.println("I am inside Lambda Expression in Java");
+		};
+		
 	
 		
 	}
@@ -20,4 +28,8 @@ public class Greeter {
 		greet.perform();
 		
 	}
+	
+}
+ interface lambda_example_type{
+	public void add();
 }
