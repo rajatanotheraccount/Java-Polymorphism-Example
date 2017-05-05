@@ -26,6 +26,15 @@ public class RunnableExample {
 		
 		//Just see the interface logic to implement Lambda 
 		//See the huge Backward Compatiblity here 
+		
+		/*
+		 * Lambda Types can only be used with Functional Interrface
+		 * Functional Interface will contain only one function 
+		 *	One and Only One 
+		 * 
+		 * 
+		 * 
+		 */
 	}
 
 }
