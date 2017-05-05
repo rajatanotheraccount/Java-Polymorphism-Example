@@ -24,7 +24,13 @@ public class Greeter {
 		
 		function_name.perform();//Executing a Lambda Express
 		
+		
+		//If you see Lambda Expression is Syntactical Sugar for Anonymous Inner Class
+		//But Somehow Lambda Expression is not a short cut for Anonymous Class 
+		//It has it's own some cool functions and things
+		
 		//The Same Concept is implied in Inner Class which 
+		//This is called as Anonymous Inner class
 		Greeting inner_greeting=new Greeting(){
 			public void perform(){
 				System.out.println("Hello World from Inner Class");
